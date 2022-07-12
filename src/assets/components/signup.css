@@ -1,0 +1,36 @@
+.container__signup{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.card{
+    border-radius: 15px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 3%);
+    overflow: hidden;
+}
+
+.card-header{
+    padding: 1rem 2rem;
+}
+
+.container__signup .card-brand a{
+    display: block;
+    text-align: center;
+}
+
+.container__signup .card-brand a img {
+    width: 100px;
+}
+
+.container__signup .card form button{
+    margin: auto;
+    width: 13rem;
+}
+
+.sign-upp{
+    margin-top: 1.4rem;
+}
+
+p.sign-upp {
+    font-size: 1.2rem;
+}

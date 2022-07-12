@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+html{
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;  
+}
+
+a {
+    text-decoration: none;
+    color: #88aaf3;
+}
+
+img {
+    max-width: 100%;
+}
+
+p{
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.bg-primary{
+    background-color: var(--bg-primary);
+}
+
+.text-center{
+    text-align:  center;
+}
+
+.padding-3{
+    padding: 3rem;
+}
+
+.margin-b2{
+    margin-bottom: 2rem;
+}
+
+.margin-r2{
+    margin-right: 2rem;
+}
+
+
+.text-dark{
+    color: #56606e;
+}
+
+.form-group{
+    margin-bottom: 1.5rem;
+}
+
+.form-group .form-control {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    border-color: #f3f3f3;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.59rem 1rem;
+    border-radius: 1.6rem;
+    border: 1px solid #ced4da;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8a909d;
+    background-color: #fdfdfd;
+}
+
+
+
+.form-control:focus{
+    color: #8a909d;
+    background-color: #fdfdfd;
+    border-color: #c4d5f9;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.4rem rgb(136 170 243 / 25%);
+    box-shadow: 0 0 0 0.4rem rgb(136 170 243 / 25%);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.control {
+    display: block;
+    position: relative;
+    padding-left: 1.8rem;
+    color: #56606e;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.control input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.control-indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background: #e1e2e5;
+    border: 1px solid #ccc;
+    border-radius: 0.125rem;
+}
+
+
+
+.control-indicator:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.control input:checked ~ .control-indicator:after {
+    display: block;
+}
+
+
+.control-checkbox .control-indicator:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    background: transparent !important;
+    border: solid #56606e;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #8a909d;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+.btn{
+    border-radius: 1.5rem;
+}
+
+.btn-primary{
+    color: #ffffff;
+    background-color: #88aaf3;
+    border-color: #88aaf3;
+}
+
+.btn-block{
+    display: block;
+}
+
+.error-text{
+    color: red;
+}
